@@ -1,0 +1,10 @@
+instalar o postgresql
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+
+apt-get install postgresql-10
+
+sudo apt-get install postgresql postgresql-contrib
+
+sudo -u postgres psql
+

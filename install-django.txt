@@ -1,0 +1,34 @@
+Instale o Python:
+sudo apt install python3.6
+
+Instale o virtualenv
+sudo apt install python3-venv
+
+usaremos o diretório projeto_django:
+mkdir projeto_django
+cd projeto_django
+
+Vamos fazer um virtualenv chamado myvenv. O formato geral desse comando é:
+
+python3 -m venv myvenv
+
+Trabalhando com o virtualenv:
+source myvenv/bin/activate
+
+(myvenv) hemerson@hrpc:~/projeto_django$
+
+Instalando o Django:
+
+python3 -m pip install --upgrade pip
+
+Instalando pacotes com requisitos
+touch requirements.txt
+
+sudo nano requirements.txt
+
+adicionar Django~=2.0.6 ao arquivo e salva
+
+pip install -r requirements.txt
+
+criar um projeto:
+(myvenv) ~/projeto_django$ django-admin startproject mysite .
